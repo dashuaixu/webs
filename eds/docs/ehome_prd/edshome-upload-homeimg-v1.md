@@ -16,7 +16,9 @@
 
    1. 营销版 - 方案制作 - 导入图纸
 
-      导入图纸分为小程序上传和本地上传，这两个功能都能拿到用户上传的户型图，拿到图以后进入预览页面![导入图纸](https://images.aidenxu.com/blog/导入图纸.png)
+      导入图纸分为小程序上传和本地上传，这两个功能都能拿到用户上传的户型图，拿到图以后进入预览页面
+
+      ![画板 1](https://images.aidenxu.com/blog/生成布局.png)
 
    2. 营销版 - 方案制作 - 搜索户型库
 
@@ -38,9 +40,11 @@
 
 
 
-![生成方案](https://images.aidenxu.com/blog/生成方案.png)
+![画板 1 拷贝](https://images.aidenxu.com/blog/生成中.png)
 
 
+
+![方案生成完毕](https://images.aidenxu.com/blog/方案生成完毕.png)
 
 
 
