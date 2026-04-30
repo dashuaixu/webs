@@ -45,11 +45,10 @@
   <nav class="sidebar">
     <h2>📖 EDS 文档</h2>
 
-    <!-- ehome_prd 分组 -->
     <div class="group">
       <div class="group-title">ehome_prd</div>
       <ul>
-        <li><a href="#/docs/ehome_prd/edshome-upload-homeimg-v1.md" data-md="docs/ehome_prd/edshome-upload-homeimg-v1.md">上传首页图片 v1</a></li>
+        <li><a href="#/ehome_prd/edshome-upload-homeimg-v1.md" data-md="ehome_prd/edshome-upload-homeimg-v1.md">上传首页图片 v1</a></li>
       </ul>
     </div>
 
@@ -76,7 +75,8 @@
 
     async function renderMarkdown(mdPath) {
       try {
-        const resp = await fetch('/' + mdPath);
+        // 用相对路径，因为 index.html 和 ehome_prd/ 同级
+        const resp = await fetch(mdPath);
         if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
         const md = await resp.text();
         contentEl.innerHTML = marked.parse(md);
@@ -95,8 +95,7 @@
       if (hash) {
         renderMarkdown(hash);
       } else {
-        // 默认加载第一个文档
-        renderMarkdown('docs/ehome_prd/edshome-upload-homeimg-v1.md');
+        renderMarkdown('ehome_prd/edshome-upload-homeimg-v1.md');
       }
     }
 
